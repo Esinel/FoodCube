@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.os.stefanos.foodcube.activities.fragments.RestaurantAboutFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_about_rest_item"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:background="@color/colorAccent"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/img_rest_about"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:text="Bajka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textIsSelectable="true"
+                android:id="@+id/txt_rest_about_name" />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:focusableInTouchMode="true"
+                android:id="@+id/rat_rest" />
+            <TextView
+                android:text="Grcka nacionalna hrana sa srcom od gvozdjaaaaaaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_rest_about_descr" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="140dp">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:text="Call:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                android:onClick="callSms"
+                android:clickable="true"
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+
+                android:text="021896109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textIsSelectable="true"
+                android:id="@+id/txt_rest_about_call"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:text="Sms:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                android:onClick="callSms"
+                android:clickable="true"
+                android:textColor="@color/colorPrimaryDark" />
+            <TextView
+
+                android:text="021896109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textIsSelectable="true"
+                android:id="@+id/txt_rest_about_sms"
+                android:clickable="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/colorPrimaryDark" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:text="Working time:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+
+            android:text="8:00 - 21:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:textIsSelectable="true"
+            android:id="@+id/txt_rest_about_working_time" />
+    </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:text="Website:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+
+            android:text="www.fuckyouall.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:onClick="visitSite"
+            android:id="@+id/txt_rest_about_website"
+            android:clickable="true"
+            android:textIsSelectable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/btn_share"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center_horizontal|bottom" />
+
+</FrameLayout>

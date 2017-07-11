@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="User details"
+            android:key="user_settings">
+
+        <EditTextPreference
+                android:defaultValue="Your first name here"
+                android:key="pref_user_first_name"
+                android:summary="Your first name"
+                android:title="First name"
+                android:selectAllOnFocus="true"/>
+
+        <EditTextPreference
+            android:defaultValue="Your last name here"
+            android:key="pref_user_lastname"
+            android:summary="Your last name"
+            android:title="Last name"
+            android:selectAllOnFocus="true" />
+
+        <EditTextPreference
+            android:defaultValue="Your address here"
+            android:key="pref_user_addr"
+            android:summary="Your address"
+            android:title="Address"
+            android:selectAllOnFocus="true" />
+
+        <EditTextPreference
+            android:defaultValue="Your phone number here"
+            android:key="pref_user_number"
+            android:summary="Your phone number name"
+            android:title="Phone number"
+            android:selectAllOnFocus="true"
+            android:inputType="number" />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Places radius"
+            android:key="radius_settings">
+
+        <ListPreference
+                android:dialogTitle="@string/pref_radiusConnectionType"
+                android:entries="@array/pref_radiusConnectionTypes_entries"
+                android:entryValues="@array/pref_radiusConnectionTypes_values"
+                android:key="@string/pref_radius"
+                android:title="@string/pref_radiusConnectionType"
+                android:summary="%s"
+                android:defaultValue="1"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Splash screen"
+            android:key="splash_settings">
+
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="show_pref"
+                android:summary="Disable splash screen on application startup"
+                android:title="Show splash screen on startup" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
